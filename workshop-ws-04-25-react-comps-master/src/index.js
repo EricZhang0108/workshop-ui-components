@@ -6,6 +6,7 @@ import NavBar from './components/nav_bar';
 import CurrentAssignment from './components/current_assignment';
 import assignments from './assignments.json';
 import AlertDialog from './components/Fab';
+import LetterAvatars from './components/letter_avatars';
 
 class App extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <div className="app">
         <NavBar />
+        <LetterAvatars />
         <CurrentAssignment assignment={assignments[this.state.currentAssignment]} />
         <AlertDialog />
         <div className="pastA">
